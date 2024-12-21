@@ -13,6 +13,10 @@ public class BlobImportEntity {
         this.data = data;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
     public String dataAsString() {
         return (new TextBlobDecoder()).decode(this.data);
     }
